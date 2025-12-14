@@ -1,0 +1,23 @@
+{
+  "projectName": "frontend-porfolio-wensleyandre",
+  "mode": "file-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "pnpm",
+  "addOnOptions": {},
+  "git": true,
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "biome",
+    "netlify",
+    "start",
+    "form",
+    "shadcn",
+    "t3env",
+    "tanstack-query",
+    "sentry",
+    "store",
+    "table"
+  ]
+}
