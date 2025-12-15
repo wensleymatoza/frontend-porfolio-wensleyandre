@@ -15,14 +15,14 @@ const navItems: navItem[] = [
 const Navbar = () => {
   return (
     <>
-      <nav className="sticky z-50 ">
+      <nav className="sticky z-50">
         <div className="flex border-2 p-2 justify-between mx-5 rounded-b-2xl">
           <div>
             <span className="text-cyan-300">Wensley Andre's </span> 
             <span className="text-purple-300">Portfolio</span>
           </div>
 
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 sticky">
             {navItems.map((item) => (
               <Link 
               key={item.name} 

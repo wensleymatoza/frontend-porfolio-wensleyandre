@@ -13,7 +13,9 @@ export const Route = createFileRoute('/')({
 function RouteComponent() {
   return (
     <>
+    <div className='min-h-screen  bg-orange-200'>
     <Navbar />
+    </div>
     </>
   )
 }
