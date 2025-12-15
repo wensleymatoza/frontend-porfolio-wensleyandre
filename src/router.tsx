@@ -1,4 +1,4 @@
-// this comment is from feature/home-index branch
+// commenting on the main branch
 import { createRouter } from '@tanstack/react-router'
 import { setupRouterSsrQueryIntegration } from '@tanstack/react-router-ssr-query'
 import * as TanstackQuery from './integrations/tanstack-query/root-provider'
