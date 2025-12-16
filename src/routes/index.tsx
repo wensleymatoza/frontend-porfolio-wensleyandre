@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar'
 import { createFileRoute} from '@tanstack/react-router'
 
@@ -13,7 +14,7 @@ export const Route = createFileRoute('/')({
 function RouteComponent() {
   return (
     <>
-    <div className='min-h-screen  bg-orange-200'>
+    <div className='min-h-screen bg-slate-700'>
     <Navbar />
     </div>
     </>
