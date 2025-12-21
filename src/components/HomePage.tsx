@@ -9,7 +9,7 @@ const HomePage = () => {
         <a href= '#portfolio'>See Portfolio</a>
       </div>
       <div className="flex border-2 size-[500px] p-2 m-2">
-          hello world
+          
       </div>
     </div>
     <div className="min-h-screen border-2 ">
@@ -17,7 +17,7 @@ const HomePage = () => {
     </div>
 
     <div id = 'portfolio'className="min-h-screen border-2 ">
-        hello world
+        Sub branch
     </div>
     </>
   )
