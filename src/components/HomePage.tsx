@@ -8,8 +8,8 @@ const HomePage = () => {
         <span><h2>I am Frontend Webdeveloper</h2></span>
         <a href= '#portfolio'>See Portfolio</a>
       </div>
-      <div className="flex border-2 size-[500px] p-2 m-2">
-          
+      <div className="flex border-2 size-[500px] p-2 m-2 items-center justify-center bg-green-200">
+          <h2 className="font-bold text-2xl">Happy New Year 2026 !!!!!</h2>
       </div>
     </div>
     <div className="min-h-screen border-2 ">
@@ -17,7 +17,7 @@ const HomePage = () => {
     </div>
 
     <div id = 'portfolio'className="min-h-screen border-2 ">
-        Sub branch
+        
     </div>
     </>
   )
