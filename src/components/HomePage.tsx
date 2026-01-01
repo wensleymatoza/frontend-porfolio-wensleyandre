@@ -37,7 +37,7 @@ const HomePage = () => {
 
         <div id="portfolio" className="min-h-screen bg-pattern1">
           {/* second section */}
-          <h1>Working on second section</h1>
+          <h1>Lets get working</h1>
         </div>
       </div>
     </>
