@@ -11,13 +11,12 @@ html{
   height: 4224px; */
   display: flex;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   align-items: flex-center;
   flex-shrink: 0;
-  border-color: rgba(0, 0, 0, 1);
-  border-style: solid;
-  border-width: 0 0 0 3px;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 1);
+  border-width: 0 0 0 0px;
+  background-size: 110% 100%;
+  background-position: 10% center;
+  background-color: rgb(255, 255, 255);
   background-image: url("/tq_mx41u7oh03-6r4s-4300h.png");
 }
