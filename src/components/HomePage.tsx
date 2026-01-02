@@ -1,25 +1,57 @@
-import { Link } from "@tanstack/react-router"
+import React from 'react'
+import '@/styles.css'
+import { motion } from 'framer-motion'
+
+
+const skills = [
+  "HTML",
+  "CSS",
+  "JAVASCRIPT",
+  "REACT",
+  "TYPESCRIPT",
+  "TANSTACK START",
+  "NEXT JS",
+]
 
 const HomePage = () => {
   return (
-    <>
-    <div className="flex min-h-screen border-2 justify-center items-center ">
-      <div className = 'flex border-2 size-[500px] p-2 m-2 justify-center items-center flex-col '>
-        <span><h2>I am Frontend Webdeveloper</h2></span>
-        <a href= '#portfolio'>See Portfolio</a>
-      </div>
-      <div className="flex border-2 size-[500px] p-2 m-2 items-center justify-center bg-green-200">
-          <h2 className="font-bold text-2xl">Happy New Year 2026 !!!!!</h2>
-      </div>
-    </div>
-    <div className="min-h-screen border-2 ">
-    
+    <> 
+    <div className='flex bg-pattern1 flex-col z-0 '>
+      {/* First Section  */}
+    <div className = 'flex border-4 min-h-screen z-0 justify-center items-center '>
+      <section className = 'border-2 p-2 m-2 flex size-100 rounded-2xl bg-blue-100 justify-center flex-col items-center gap-10'>
+        <h1 className = 'text-4xl font-bold text-center'> Welcome to My Portfolio </h1>
+        <a href = '#projects' className= 'border-2 h-20 w-30 flex justify-center items-center p-2 bg-amber-200 rounded-2xl font-bold hover:scale-110'> See Profile</a>
+      </section>
     </div>
 
-    <div id = 'portfolio'className="min-h-screen border-2 ">
-        
+    {/* Second Section  */}
+    <section className = 'flex min-h-[10vh] w-full z-0 overflow-hidden'>
+      <motion.div 
+      className='flex z-10 w-max gap-30 bg-transparent items-center will-change-transform'
+      animate = {{x: ["0%", "-50%"]}}
+      transition={{ ease: "linear", duration: 5, repeat: Infinity }}>
+        {[...skills, ...skills].map((skill, i) => (
+          <h2 
+            key = {i}
+            className="text-2xl font-semibold px-6 py-4 whitespace-nowrap">
+            {skill}
+          </h2>
+        ))}
+      </motion.div>
+    </section>
+
+
+    {/* Third Section  */}
+    <section id= 'projects' className = 'flex border-4 min-h-screen z-0 justify-center '>
+      <div className = ' flex border-2 p-2 m-2 size-100 rounded-2xl bg-green-100 justify-center flex-col items-center gap-10'>
+        <h1 className='text-3xl'>Projects</h1>
+      </div>
+    </section>
+
     </div>
     </>
+
   )
 }
 
