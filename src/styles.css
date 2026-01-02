@@ -9,7 +9,6 @@ html{
   left: 122px;
   width: 1196px;
   height: 4224px; */
-  display: flex;
   overflow: hidden;
   position: relative;
   align-items: flex-center;
@@ -17,6 +16,5 @@ html{
   border-width: 0 0 0 0px;
   background-size: 110% 100%;
   background-position: 10% center;
-  background-color: rgb(255, 255, 255);
   background-image: url("/tq_mx41u7oh03-6r4s-4300h.png");
 }
