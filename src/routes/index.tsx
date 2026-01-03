@@ -1,6 +1,6 @@
 
-import HomePage from '@/components/HomePage'
-import Navbar from '@/components/Navbar'
+import HomePage from '@/components/Homepage/HomePage'
+import Navbar from '@/components/Navbar/Navbar'
 import { createFileRoute} from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
