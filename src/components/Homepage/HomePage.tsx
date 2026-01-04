@@ -16,7 +16,7 @@ const skills = [
 const HomePage = () => {
   return (
     <> 
-    <div className='flex bg-pattern1 flex-col z-0 '>
+    <div className='flex bg-[#313638] flex-col z-0 '>
       {/* First Section  */}
     <div className = 'hero'>
       <section className = 'hero-content'>
@@ -26,9 +26,9 @@ const HomePage = () => {
     </div>
 
     {/* Second Section  */}
-    <section className = 'flex min-h-[10vh] w-full z-0 overflow-hidden'>
+    <section className = 'skills-carousel'>
       <motion.div 
-      className='flex z-10 w-max gap-30 bg-transparent items-center will-change-transform'
+      className='skills-carousel flex'
       animate = {{x: ["0%", "-50%"]}}
       transition={{ ease: "linear", duration: 60, repeat: Infinity }}>
         {[...skills, ...skills].map((skill, i) => (
@@ -42,8 +42,8 @@ const HomePage = () => {
     </section>
 
     {/* Third Section  */}
-    <section id= 'projects' className = 'flex border-4 min-h-screen z-0 justify-center '>
-      <div className = ' flex border-2 p-2 m-2 size-100 rounded-2xl bg-green-100 justify-center flex-col items-center gap-10'>
+    <section id= 'projects' className = 'flex min-h-screen z-0 justify-center '>
+      <div className = 'projects-section'>
         <h1 className='text-3xl'>Projects</h1>
       </div>
     </section>

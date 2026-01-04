@@ -15,8 +15,8 @@ const navItems: navItem[] = [
 const Navbar = () => {
   return (
     <>
-      <nav className="sticky  z-50">
-        <div className="flex border-2 p-2 justify-between mx-5 rounded-b-2xl ">
+      <nav className="sticky  bg-[#313638]">
+        <div className="flex  p-2 justify-between mx-5 rounded-b-2xl ">
           <div className="flex shrink-0 w-fit">
             <span className="text-cyan-300">Wensley Andre's </span> 
             <span className="text-purple-300">Portfolio</span>

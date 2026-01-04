@@ -11,7 +11,7 @@ function RouteComponent() {
   return (
     <>
     {/* bg-color is called egg white*/}
-    <div className='min-h-screen bg-[#FDFDFD]'> 
+    <div className='min-h-screen'> 
     <Navbar />
     <HomePage />
     </div>
