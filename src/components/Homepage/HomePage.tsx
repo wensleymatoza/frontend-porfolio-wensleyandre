@@ -1,4 +1,3 @@
-import React from 'react'
 import '@/styles.css'
 import './HomePage.css'
 import Marquee from 'react-fast-marquee'
