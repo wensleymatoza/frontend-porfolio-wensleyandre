@@ -7,6 +7,7 @@ export const Route = createFileRoute('/Projects/')({
 function ProjectsPage() {
   return (
     <>
+    <div>
       <section className="relative w-full max-w-6xl px-6">
         <div className="relative bg-[#1E1F21] rounded-2xl p-10 border border-[#F4A261]/40 shadow-[0_0_60px_#F4A26133]">
           <div className="grid grid-cols-12 gap-8 items-center">
@@ -62,9 +63,13 @@ function ProjectsPage() {
               </div>
 
             </div>
+            <div>
+              
+            </div>
           </div>
         </div>
       </section>
+      </div>
     </>
   )
 }

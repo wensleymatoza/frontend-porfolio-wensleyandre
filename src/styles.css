@@ -1,6 +1,19 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background: #313638;
+  overflow-x: hidden;
+}
 
 html{
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background: #313638;
+  overflow-x: hidden;
 }
 
