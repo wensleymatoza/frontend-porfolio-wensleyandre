@@ -15,26 +15,29 @@ const navItems: navItem[] = [
 const Navbar = () => {
   return (
     <>
-      <nav className="sticky  bg-[#313638]">
-        <div className="flex  p-2 justify-between mx-5 rounded-b-2xl ">
-          <div className="flex shrink-0 w-fit">
-            <span className="text-cyan-300">Wensley Andre's </span> 
-            <span className="text-purple-300">Portfolio</span>
+      <nav className="sticky bg-[#313638] border-2 h-24 flex justify-between">
+          <div className="flex shrink-0 w-fit ">
+            <div className = 'flex items-center justify-center  mr-2 px-4 '>
+              <span className = 'font-bold text-[24px] px-4 py-1 border-2 rounded-2xl'>W</span>
+              <div className="flex flex-col px-4">
+                <span className="text-cyan-300 text-[16px] whitespace-pre-wrap">Wensley Andre</span> 
+                <span className="text-purple-300 text-[16px]">Front-end Developer</span>
+              </div>
+            </div>
           </div>
 
-          <div className="flex gap-x-3 sticky">
+          <div className="flex gap-x-3 sticky items-center justify-center">
             {navItems.map((item) => (
               <Link 
               key={item.name} 
               to={item.href} 
               className="hover:scale-105 ease-in-out transition-transform duration-200">
-                <h2>
+                <h1 className="text-[24px] text-[#FAFAFA]">
                     {item.name}
-                </h2>
+                </h1>
               </Link>
             ))}
           </div>
-        </div>
       </nav>
     </>
   );
