@@ -15,10 +15,10 @@ const navItems: navItem[] = [
 const Navbar = () => {
   return (
     <>
-      <nav className="sticky bg-[#313638] border-2 h-24 flex justify-between">
+      <nav className="sticky bg-[#313638] border-2 h-20 flex justify-between px-4">
           <div className="flex shrink-0 w-fit ">
             <div className = 'flex items-center justify-center  mr-2 px-4 '>
-              <span className = 'font-bold text-[24px] px-4 py-1 border-2 rounded-2xl'>W</span>
+              <span className = 'font-bold text-[24px] text-white border- px-4 py-1 border-2 rounded-2xl'>W</span>
               <div className="flex flex-col px-4">
                 <span className="text-cyan-300 text-[16px] whitespace-pre-wrap">Wensley Andre</span> 
                 <span className="text-purple-300 text-[16px]">Front-end Developer</span>

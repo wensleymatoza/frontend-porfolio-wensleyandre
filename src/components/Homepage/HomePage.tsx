@@ -47,7 +47,7 @@ const HomePage = () => {
     <section id= 'projects' className = 'flex min-h-screen z-0 justify-center '>
       <div className = 'projects-section'>
         <h1 className='text-3xl'>Projects</h1>
-        <div className='flex [&>*]:'>
+        <div className='flex [&>*]: gap-30'>
           <div className='flex border-2 p-2 m-2 size-50'>Project 1</div>
           <div className='flex border-2 p-2 m-2 size-50'>Project 2</div>
         </div>
