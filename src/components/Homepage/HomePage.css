@@ -59,8 +59,8 @@
     width: 50rem;
     border-radius: 1.5rem;
     background-color:#7FB7BE ;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items:center;
     flex-direction: column;
     gap: 2.5rem;
 }
