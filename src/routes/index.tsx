@@ -1,5 +1,5 @@
 
-import HomePage from '@/components/Homepage/HomePage'
+import HomePage from '@/pages/Homepage/HomePage'
 import Navbar from '@/components/Navbar/Navbar'
 import { createFileRoute} from '@tanstack/react-router'
 
