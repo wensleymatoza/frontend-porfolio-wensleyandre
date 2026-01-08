@@ -158,7 +158,7 @@ const HomePage = () => {
 
         {/* PROJECTS */}
         <section id="projects" className="flex min-h-[50vh] w-full z-0 justify-center items-center border-4 bg-white">
-
+      {/* add carousel for projects */}
       <Carousel className='border-2'>
         <CarouselContent> 
           <CarouselItem >Project 1</CarouselItem>
