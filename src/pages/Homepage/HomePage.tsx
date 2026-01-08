@@ -3,6 +3,13 @@ import '@/styles.css'
 import './HomePage.css'
 import Marquee from 'react-fast-marquee'
 import { motion, useInView, useScroll, useTransform } from 'framer-motion'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const skills = [
   'HTML',
@@ -150,21 +157,20 @@ const HomePage = () => {
         <VerticalTimeline />
 
         {/* PROJECTS */}
-        <section id="projects" className="flex min-h-screen z-0 justify-center">
-          <div className="projects-section">
-            <h1 className="text-3xl text-[#EDEDED]">Projects</h1>
+        <section id="projects" className="flex min-h-[50vh] w-full z-0 justify-center items-center border-4 bg-white">
 
-            {/* Your old "[&>*]:" was invalid Tailwind; using gap instead */}
-            <div className="flex gap-4 mt-6">
-              <div className="flex border-2 border-white/20 p-4 size-50 text-[#EDEDED]">
-                Project 1
-              </div>
-              <div className="flex border-2 border-white/20 p-4 size-50 text-[#EDEDED]">
-                Project 2
-              </div>
-            </div>
-          </div>
+      <Carousel className='border-2'>
+        <CarouselContent> 
+          <CarouselItem >Project 1</CarouselItem>
+          <CarouselItem>Project 2</CarouselItem>
+          <CarouselItem>Project 3</CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+      
         </section>
+
       </div>
     </>
   )
