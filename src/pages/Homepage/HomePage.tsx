@@ -25,7 +25,8 @@ const HomePage = () => {
   return (
     <>
      <div className="flex bg-[#313638] flex-col z-0">
-      <Hero />
+      {/* Hero Section */}
+      <Hero /> 
         {/* SKILLS MARQUEE */}
         <section className="skills-carousel mb-5">
           <Marquee speed={100} direction="left">
