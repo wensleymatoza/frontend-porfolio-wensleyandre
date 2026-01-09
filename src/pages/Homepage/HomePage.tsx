@@ -1,26 +1,24 @@
-
-import '@/styles.css'
-import './HomePage.css'
-import Marquee from 'react-fast-marquee'
+import "@/styles.css";
+import "./HomePage.css";
+import Marquee from "react-fast-marquee";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import VerticalTimeline from '@/components/VerticalTimeline/Timeline'
+} from "@/components/ui/carousel";
+import VerticalTimeline from "@/components/VerticalTimeline/Timeline";
 
 const skills = [
-  'HTML',
-  'CSS',
-  'JAVASCRIPT',
-  'REACT',
-  'TYPESCRIPT',
-  'TANSTACK START',
-  'NEXT JS',
-]
-
+  "HTML",
+  "CSS",
+  "JAVASCRIPT",
+  "REACT",
+  "TYPESCRIPT",
+  "TANSTACK START",
+  "NEXT JS",
+];
 
 const HomePage = () => {
   return (
@@ -34,8 +32,8 @@ const HomePage = () => {
               Hi, I&apos;m Wensley Andre Matoza,
               <br />
               I&apos;m a front-end developer based in Leyte, Philippines.
-              <br />
-              I build UI systems, SaaS pages, and API-driven apps with strong UX.
+              <br />I build UI systems, SaaS pages, and API-driven apps with
+              strong UX.
             </h2>
             <a href="#projects" className="hero-button hover:scale-110 ml-10">
               See Profile
@@ -56,29 +54,26 @@ const HomePage = () => {
             ))}
           </Marquee>
         </section>
-
-        {/* ✅ TIMELINE (toggle cards + highlight line) */}
         <VerticalTimeline />
-
         {/* PROJECTS */}
-        <section id="projects" className="flex min-h-[100vh] w-full z-0 justify-center items-center ">
-      {/* add carousel for projects7 */}
-
-      <Carousel className='border-2 flex h-100 w-100 items-center justify-center pl-38 rounded-2xl border-black bg-blue-300'>
-        <CarouselContent> 
-          <CarouselItem >Project 1</CarouselItem>
-          <CarouselItem>Project 2</CarouselItem>
-          <CarouselItem>Project 3</CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-      
+        {/* add carousel for projects */}
+        <section
+          id="projects"
+          className="flex min-h-svh w-full z-0 justify-center items-center "
+        >
+          <Carousel className="border-2 flex h-100 w-100 items-center justify-center pl-38 rounded-2xl border-black bg-blue-300">
+            <CarouselContent>
+              <CarouselItem>Project 1</CarouselItem>
+              <CarouselItem>Project 2</CarouselItem>
+              <CarouselItem>Project 3</CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </section>
-
       </div>
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
