@@ -1,5 +1,3 @@
-import React from "react";
-
 function LogoBrand() {
   return (
     <div className="flex shrink-0 w-fit">
